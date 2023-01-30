@@ -38,7 +38,7 @@ function ProductDetails() {
     }
     
     const deleteButton = () => { 
-        axios.delete(`http://scandiweb.ezyro.com/${checkedValues}/?i=1`).then(function(response){
+        axios.delete(`http://scandiweb.ezyro.com/php/${checkedValues}/index`).then(function(response){
 
             setValue([]);
             setArraysku([]);
