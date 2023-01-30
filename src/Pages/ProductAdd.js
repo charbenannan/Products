@@ -42,7 +42,7 @@ function ProductAdd() {
             return;
           }
           
-        axios.post('http://localhost:8082/php/index', inputs).then(function(response){
+        axios.post('https://scandiwebproduct.000webhostapp.com/index', inputs).then(function(response){
            
             if(response.data.message === 'This product has already been added'){
                 document.getElementById("notification").innerHTML = "SKU already exists, please add another product or correct the sku";
