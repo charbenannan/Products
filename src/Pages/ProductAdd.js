@@ -128,11 +128,11 @@ function ProductAdd() {
                             display: inputs.productType === "DVD" ? "block" : "none"
                         }}
                     >
+                    <tbody>
                         <label htmlFor="size">Size(MB)</label>
                         <input type="number" name="size" id="size" onChange={maintainChange} required/>
-                        <p>
-                            Please provide the size of the DVD-disc in Megabytes
-                        </p>
+                        <p>Please provide the size of the DVD-disc in Megabytes</p>
+                        </tbody>
                     </div>
 
                     <div
@@ -183,10 +183,12 @@ function ProductAdd() {
                             display: inputs.productType === "Book" ? "block" : "none"
                         }}
                     >
+                        <tbody>
                         <label htmlFor="weight">Weigth(KG)</label>
                         <input type="number" name="weight" id="weight" onChange={maintainChange} required/>
 
                         <p>Please provide the weight in Kilogram</p>
+                        </tbody>
                     </div>
                 </form>
             </main>
