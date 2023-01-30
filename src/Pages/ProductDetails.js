@@ -31,7 +31,7 @@ function ProductDetails() {
         }, [products]);
 
     const getProducts = ()=> {
-    axios.get('http://scandiweb.ezyro.com/?i=1').then(function(response){
+    axios.get('http://scandiweb.ezyro.com/php/index').then(function(response){
     setProducts(response.data);
 
     });
