@@ -31,14 +31,14 @@ function ProductDetails() {
         }, [products]);
 
     const getProducts = ()=> {
-    axios.get('http://scandiweb.ezyro.com/php/index').then(function(response){
+    axios.get('http://scand.atwebpages.com/php/index').then(function(response){
     setProducts(response.data);
 
     });
     }
     
     const deleteButton = () => { 
-        axios.delete(`http://scandiweb.ezyro.com/php/${checkedValues}/index`).then(function(response){
+        axios.delete(`http://scand.atwebpages.com/php/${checkedValues}/index`).then(function(response){
 
             setValue([]);
             setArraysku([]);
