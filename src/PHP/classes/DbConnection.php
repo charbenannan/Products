@@ -4,10 +4,10 @@ namespace classes;
 use PDO;
 
 class DbConnection{
-    private $server = 'localhost';
-    private $dbname = 'scandiweb';
-    private $username = 'root';
-    private $password = '';
+   private $server = 'fdb28.awardspace.net';
+    private $dbname = '4254785_scandiweb';
+    private $username = '4254785_scandiweb';
+    private $password = 'C-hor4se';
 
     public function connect(){
         try{
