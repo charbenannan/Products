@@ -32,7 +32,7 @@ CREATE TABLE `products` (
   `sku` varchar(255) NOT NULL,
   `product_type` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
-  `price` double NOT NULL,
+  `price` int(11) NOT NULL,
   `size` int(11) DEFAULT 0,
   `weight` int(11) DEFAULT 0,
   `height` int(11) DEFAULT 0,
@@ -84,4 +84,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-products
