@@ -182,13 +182,15 @@ function ProductAdd() {
                         style={{
                             display: inputs.productType === "Book" ? "block" : "none"
                         }}
-                    >
+                    >  
+                        <table>
                         <tbody>
                         <label htmlFor="weight">Weigth(KG)</label>
                         <input type="number" name="weight" id="weight" onChange={maintainChange} required/>
 
                         <p>Please provide the weight in Kilogram</p>
                         </tbody>
+                       </table>
                     </div>
                 </form>
             </main>
