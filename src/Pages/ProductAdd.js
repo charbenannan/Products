@@ -42,7 +42,7 @@ function ProductAdd() {
             return;
           }
           
-        axios.post('https://scandiproducts-online.preview-domain.com/php/index', inputs).then(function(response){
+        axios.post('https://scandiproducts.online/php/index', inputs).then(function(response){
            
             if(response.data.message === 'This product has already been added'){
                 document.getElementById("notification").innerHTML = "SKU already exists, please add another product or correct the sku";
