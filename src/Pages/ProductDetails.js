@@ -31,14 +31,14 @@ function ProductDetails() {
         }, [products]);
 
     const getProducts = ()=> {
-    axios.get('https://scandiproducts-online.preview-domain.com/php/index').then(function(response){
+    axios.get('https://scandiproducts.online/php/index').then(function(response){
     setProducts(response.data);
 
     });
     }
     
     const deleteButton = () => { 
-        axios.delete(`https://scandiproducts-online.preview-domain.com/php/${checkedValues}/index`).then(function(response){
+        axios.delete(`https://scandiproducts.online/php/${checkedValues}/index`).then(function(response){
 
             setValue([]);
             setArraysku([]);
